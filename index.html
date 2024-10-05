@@ -1,0 +1,701 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>क्रेडिट मित्र - आपका विश्वसनीय क्रेडिट कार्ड गाइड</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .hero {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+        .card img {
+            max-width: 200px;
+            margin: 0 auto 1rem;
+        }
+        .card ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+        .card .btn {
+            margin-top: auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 0;
+            background-color: #f9f9f9;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .contact-form {
+            flex: 1;
+            max-width: 500px;
+        }
+        .contact-info {
+            flex: 1;
+            max-width: 500px;
+            padding-left: 2rem;
+        }
+        .contact-form h2, .contact-info h2 {
+            font-size: 2rem;
+            color: #003366;
+            margin-bottom: 1.5rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .btn-submit:hover {
+            background-color: #218838;
+        }
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+        .contact-info i {
+            margin-right: 0.5rem;
+            color: #003366;
+        }
+        .map-container {
+            margin-top: 2rem;
+            height: 300px;
+            background-color: #e9ecef; /* Placeholder for the map */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        /* about section */
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 4rem 0;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-content h2 {
+            font-size: 2rem;
+            color: #003366;
+            margin-bottom: 1.5rem;
+        }
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .about-content ul {
+            list-style-type: none;
+            margin-bottom: 1rem;
+        }
+        .about-content ul li {
+            margin-bottom: 0.5rem;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .team-member {
+            margin: 1rem;
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">क्रेडिट मित्र</div>
+            <ul class="nav-links">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>अपना सही क्रेडिट कार्ड चुनें</h1>
+                <h1>Find Your Perfect Credit Card</h1>
+                <p>Compare offers from top banks and choose the best card for your needs.</p>
+            </div>
+        </section>
+
+        <section id="cards" class="container card-grid">
+            <!-- Card entries will be dynamically added here -->
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-content">
+                <h2>About Us</h2>
+                <p>क्रेडिट मित्र का उद्देश्य आपको क्रेडिट कार्ड की दुनिया में मार्गदर्शन प्रदान करना है। </p>
+                <p>Our team consists of financial experts and experienced writers dedicated to providing you with up-to-date and reliable information about credit card selection, usage, and benefits.</p>
+                <p>At Credit Mitra, you'll find:</p>
+                <ul>
+                    <li>Comprehensive credit card reviews and comparisons</li>
+                    <li>Tips and strategies to improve your credit score</li>
+                    <li>Methods to maximize rewards programs</li>
+                    <li>Informative blog posts for financial education</li>
+                </ul>
+                <p>We're committed to helping you make informed decisions and succeed in your financial journey. With Credit Mitra, you're just a click away from finding your ideal credit card!</p>
+                
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="profile.png" alt="Neha Sharma">
+                        <p>Neha Sharma</p>
+                        <p>Founder & CEO</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Get in Touch</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><i>📍</i> Delhi, India</p>
+                    <p><i>📞</i> +91 7011267681</p>
+                    <p><i>✉️</i> nprojectsteam@gmail.com</p>
+                    
+                    <!-- <div class="map-container">
+                        Replace this div with an actual map integration -->
+                        <!-- <p>Map of Credit Card Mitra office location</p> -->
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Credit Card Mitra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const cardData = [
+            {
+                name: "SBI Card",
+                bank: "State Bank of India",
+                image: "sbi-simply-save-card-5.png",
+                features: [
+                    "2,000 bonus points on spends of ₹2,000 in 60 days",
+                    "Dining, movies, grocery & department stores: ₹150 = 10 points",
+                    "Others: ₹150 = 1 point",
+                    "Rs 499/- annual fee",
+                    "Document Required - PAN NO, AADHAR NUMBER"
+                ],
+                applyLink: "https://bitlii.cc/en/EADqw6"
+            },
+            {
+                name: "HSBC Card",
+                bank: "HSBC Bank",
+                image: "hsbc-visa-platinum-card-v4.png",
+                features: [
+                    "Earn 2 rewards points on every Rs.150 spent on all retail purchases.",
+                    "Up to 5 times more rewards points ",
+                    "Enjoy surcharge waiver ",
+                    "15% off on dining at partner restaurants across major Indian cities.",
+                    "Rs 0/- annual fee"
+                ],
+                applyLink: "https://bitlii.cc/en/1KjqNt"
+            },
+            {
+                name: "Axis Bank Card",
+                bank: "Axis Bank",
+                image: "axis-neo.png",
+                features: [
+                    "10% off / cash back on select spends",
+                    "2 points/₹200 spent",
+                    "15% off at selected restaurants",
+                    "Rs 250/- annual fee"
+                ],
+                applyLink: "#"
+            },
+            {
+                name: "Hdfc Credit Card",
+                bank: "Hdfc Bank",
+                image: "hdfc-freedom-card.png",
+                features: [
+                    "Select retail/online partners: 40 points",
+                    "Other Retail: 4 points",
+                    "1 point = 1 airmile/₹ 0.50",
+                    "Rs 1000/- annual fee (First Year No Fee)"
+                ],
+                applyLink: "#"
+            },
+            {
+                name: "AU BANK CREDIT CARD",
+                bank: "AU BANK Bank",
+                image: "ausmallbank-logo.png",
+                features: [
+                    "Earn 20 reward points for every Rs.100 you spend on dining.",
+                    "Five Reward Points for every Rs.100 spent in retail by other merchant categories.",
+                    "Get air accident cover of Rs.2 crore.",
+                    "Get 1.5% cashback on POS transactions at partner merchant outlets"
+                ],
+                applyLink: "https://bitlii.cc/en/8desuU"
+            },
+            {
+                name: "Take Loan - Prefr",
+                bank: "Prefr",
+                image: "prefr-new-logo.jpg",
+                features: [
+                    "Instant Personal Loan up-to ₹3,00,000",
+                    "No site/bank visits, and no physical documents needed.",
+                    "Get money in 5 mins",
+                    
+                ],
+                applyLink: "https://bitlii.cc/en/XJK4Zu"
+            },
+            {
+                name: "IDFC First Card",
+                bank: "IDFC Bank",
+                image: "idfc-logo.jpg",
+                features: [
+                    "Lifetime Free",
+                    "10x Reward",
+                    "Fuel and Utility",
+                    "Rs 0/- annual fee (First Year No Fee)"
+                ],
+                applyLink: "https://bitlii.cc/en/3rmAOi"
+            },
+            {
+                name: "Induslnd Bank Credit Card",
+                bank: "Induslnd Bank",
+                image: "induslnd.png",
+                features: [
+                    "Fee Free (0 Joining/Annual Fees)​for Lifetime",
+                    "2 Reward Points on every ₹100",
+                    "Shop, Scan & Pay via UPI​",                       
+                    
+                ],
+                applyLink: "https://bitlii.cc/en/MX9WiD"
+            },
+        ];
+
+        const cardGrid = document.querySelector('.card-grid');
+
+        cardData.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card';
+            cardElement.innerHTML = `
+                <h2>${card.name}</h2>
+                <p><em>${card.bank}</em></p>
+                <img src="${card.image}" alt="${card.name}">
+                <ul>
+                    ${card.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+                <a href="${card.applyLink}" class="btn">Apply Now</a>
+            `;
+            cardGrid.appendChild(cardElement);
+        });
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>क्रेडिट मित्र - आपका विश्वसनीय क्रेडिट कार्ड गाइड</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .hero {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+        .card img {
+            max-width: 200px;
+            margin: 0 auto 1rem;
+        }
+        .card ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+        .card .btn {
+            margin-top: auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">क्रेडिट मित्र</div>
+            <ul class="nav-links">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>अपना सही क्रेडिट कार्ड चुनें</h1>
+                <h1>Find Your Perfect Credit Card</h1>
+                <p>Compare offers from top banks and choose the best card for your needs.</p>
+            </div>
+        </section>
+
+        <section id="cards" class="container card-grid">
+            <!-- Card entries will be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CreditMitra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const cardData = [
+            {
+                name: "SBI Card",
+                bank: "State Bank of India",
+                image: "sbi-simply-save-card-5.png",
+                features: [
+                    "2,000 bonus points on spends of ₹2,000 in 60 days",
+                    "Dining, movies, grocery & department stores: ₹150 = 10 points",
+                    "Others: ₹150 = 1 point",
+                    "Rs 499/- annual fee",
+                    "Document Required - PAN NO, AADHAR NUMBER"
+                ],
+                applyLink: "https://bitlii.cc/en/wNP7Bt"
+            },
+            {
+                name: "HSBC Card",
+                bank: "HSBC Bank",
+                image: "hsbc-visa-platinum-card-v4.png",
+                features: [
+                    "Earn 2 rewards points on every Rs.150 spent on all retail purchases.",
+                    "Up to 5 times more rewards points ",
+                    "Enjoy surcharge waiver ",
+                    "15% off on dining at partner restaurants across major Indian cities.",
+                    "Rs 0/- annual fee"
+                ],
+                applyLink: "https://bitlii.cc/en/AkIB6X"
+            },
+            {
+                name: "Axis Bank Card",
+                bank: "Axis Bank",
+                image: "axis-neo.png",
+                features: [
+                    "10% off / cash back on select spends",
+                    "2 points/₹200 spent",
+                    "15% off at selected restaurants",
+                    "Rs 250/- annual fee"
+                ],
+                applyLink: "https://bitlii.cc/en/JXIH1X"
+            },
+            {
+                name: "Hdfc Credit Card",
+                bank: "Hdfc Bank",
+                image: "hdfc-freedom-card.png",
+                features: [
+                    "Select retail/online partners: 40 points",
+                    "Other Retail: 4 points",
+                    "1 point = 1 airmile/₹ 0.50",
+                    "Rs 1000/- annual fee (First Year No Fee)"
+                ],
+                applyLink: "https://bitlii.cc/en/FHgNO3"
+            }
+        ];
+
+        const cardGrid = document.querySelector('.card-grid');
+
+        cardData.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card';
+            cardElement.innerHTML = `
+                <h2>${card.name}</h2>
+                <p><em>${card.bank}</em></p>
+                <img src="${card.image}" alt="${card.name}">
+                <ul>
+                    ${card.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+                <a href="${card.applyLink}" class="btn">Apply Now</a>
+            `;
+            cardGrid.appendChild(cardElement);
+        });
+    </script>
+</body>
+</html>
+>>>>>>> d821ead6253bbe5d88d8db244269e2dc87e8ec37
